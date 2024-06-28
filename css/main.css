@@ -15,7 +15,7 @@
     --second-bg-color: #1b1b1b;
     --text-color: #fff;
     --first-theme-color: #00acdc;
-    --second-theme-color: #6a00db;
+    --second-theme-color: #9d60ff;
     --third-theme-color: #DC3100;
 }
 
@@ -31,7 +31,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 40px 10%;
+    padding: 30px 10%;
     background-color: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(10px);
     display: flex;
@@ -50,9 +50,9 @@ header {
 .logo:hover {
     transform: scale(1.1);
 }
-span {
-    text-shadow: 0 0 25px var(--first-theme-color);
-    color: var(--first-theme-color);
+header span {
+    text-shadow: 0 0 15px var(--second-theme-color);
+    color: var(--second-theme-color);
 }
 
 .navbar a {
@@ -64,12 +64,12 @@ span {
 }
 .navbar a:hover,
 .navbar a.active {
-    color: var(--first-theme-color);
-    border-bottom: 3px solid var(--first-theme-color);
+    color: var(--second-theme-color);
+    border-bottom: 3px solid var(--second-theme-color);
 }
 #menu-icon {
     font-size: 2.6rem;
-    color: var(--first-theme-color);
+    color: var(--second-theme-color);
     display: none;
 }
 
@@ -82,7 +82,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10rem; 
+    gap: 8rem; 
 }
 .home-content {
     display: flex;
@@ -92,12 +92,15 @@ section {
     justify-content: center;
     margin-top: 3rem;
 }
+.home-content span {
+    color: var(--second-theme-color);
+}
 .home-content h1 {
     font-size: 3rem;
 }
 .home-content p {
     font-weight: 400;
-    max-width: 1000px;
+    max-width: 600px;
 }
 
 .profile-img {
@@ -106,7 +109,7 @@ section {
 .profile-img img {
     position: relative;
     top: 3rem;
-    width: 50vh;
+    width: 60vh;
     border-radius: 50%;
     border: 2px solid var(--second-theme-color);
     box-shadow: 0 0 25px var(--second-theme-color);
@@ -126,17 +129,37 @@ section {
     width: 3rem;
     height: 3rem;
     background: transparent;
-    border: p1x solid var(--first-theme-color);
+    border: p1x solid var(--second-theme-color);
     border-radius: 50%;
-    color: var(--first-theme-color);
+    color: var(--second-theme-color);
     font-size: 1.5rem;
-    box-shadow: 0 0 5px var(--first-theme-color);
+    box-shadow: 0 0 5px var(--second-theme-color);
     margin: 1rem 1.5rem 1rem 0;
     transition: 0.3s ease-in-out;
 }
 .social-icons a:hover {
     color: var(--text-color);
     transform: scale(1.1)translateY(-3px);
-    box-shadow: 0 0 10px var(--first-theme-color);
-    background-color: var(--first-theme-color);
+    box-shadow: 0 0 10px var(--second-theme-color);
+    background-color: var(--second-theme-color);
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    background-color: var(--second-theme-color);
+    box-shadow: 0 0 5px var(--second-theme-color);
+    border-radius: 20px;
+    color: var(--text-color);
+    transition: 0.3s ease-in-out;
+    letter-spacing: 0.1rem;
+    font-weight: 500;
+    border: 2px solid transparent;
+}
+.btn:hover {
+    background: transparent;
+    box-shadow: 0 0 10px var(--second-theme-color);
+    border: 2px solid var(--second-theme-color);
+    color: var(--second-theme-color);
+    transform: scale(1)translateY(3px);
 }
