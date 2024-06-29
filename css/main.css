@@ -41,7 +41,7 @@ header {
 }
 
 .logo {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     color: var(--text-color);
     font-weight: 800;
     cursor: pointer;
@@ -51,21 +51,24 @@ header {
     transform: scale(1.1);
 }
 header span {
-    text-shadow: 0 0 15px var(--second-theme-color);
+    text-shadow: 0 0 20px var(--second-theme-color);
     color: var(--second-theme-color);
 }
 
 .navbar a {
     color: var(--text-color);
-    margin-left: 3rem;
+    margin-left: 1.5rem;
     font-weight: 500;
-    transition: 0.3s ease;
-    border-bottom: 3px solid transparent;
+    transition: 0.3s ease-in-out;
+    border: 3px solid transparent;
+    border-radius: 20px;
+    padding: 7px 20px;
 }
 .navbar a:hover,
 .navbar a.active {
     color: var(--second-theme-color);
-    border-bottom: 3px solid var(--second-theme-color);
+    border: 3px solid var(--second-theme-color);
+    box-shadow: 0 0 7px var(--second-theme-color);
 }
 #menu-icon {
     font-size: 2.6rem;
@@ -126,15 +129,15 @@ section {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 3rem;
-    height: 3rem;
+    width: 2.75rem;
+    height: 2.75rem;
     background: transparent;
     border: p1x solid var(--second-theme-color);
     border-radius: 50%;
     color: var(--second-theme-color);
     font-size: 1.5rem;
     box-shadow: 0 0 5px var(--second-theme-color);
-    margin: 1rem 1.5rem 1rem 0;
+    margin: 1rem 1.25rem 1rem 0;
     transition: 0.3s ease-in-out;
 }
 .social-icons a:hover {
@@ -163,3 +166,58 @@ section {
     color: var(--second-theme-color);
     transform: scale(1)translateY(3px);
 }
+
+.text-animation {
+    font-size: 25px;
+    font-weight: 600;
+    min-width: 280px;
+}
+.text-animation span {
+    position: relative;
+}
+.text-animation span::before {
+    content: "Software Engineering Student";
+    color: var(--second-theme-color);
+    animation: words 20s infinite;
+}
+.text-animation span::after {
+    content: "";
+    background-color: var(--second-bg-color);
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    border-left: 3px solid var(--second-bg-color);
+    right: -8px;
+    animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
+}
+@keyframes cursor {
+    to {
+        border-left: 2.5px solid var(--second-theme-color);
+    }
+}
+@keyframes words {
+    0%, 20% {
+        content: "Software Engineering Student";
+    }
+    21%, 40% {
+        content: "Front-End Developer";
+    }
+    41%, 60% {
+        content: "Web Designer";
+    }
+    61%, 80% {
+        content: "Programmer";
+    }
+    81%, 100% {
+        content: "Full-End Developer";
+    }
+}
+@keyframes typing {
+    10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95% {
+        width: 0;
+    }
+    5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85% {
+        width: calc(100% + 8px);
+    }
+}
+
