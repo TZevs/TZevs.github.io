@@ -1,6 +1,14 @@
 .home-grid {
     grid-template-columns: repeat(1, 100%);
+    padding: 6rem 0;
 }
+.col-left {
+    order: 2;
+}
+.col-right {
+    order: -1;
+}
+
 
 .navbar {
     display: none;

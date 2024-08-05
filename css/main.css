@@ -69,6 +69,7 @@ header span {
     color: var(--second-theme-color);
     border: 3px solid var(--second-theme-color);
     box-shadow: 0 0 7px var(--second-theme-color);
+    background-color: #000000;
 }
 #menu-icon {
     font-size: 2.6rem;
@@ -78,23 +79,29 @@ header span {
 
 section {
     min-height: 100vh;
-    padding: 8rem 0;
 }
 .home-grid {
     display: grid;
+    padding: 8rem 0;
     grid-template-columns: repeat(2, 50%);
+    align-items: center;
+    justify-content: center;
 }
 .home-grid-col {
-    display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
 }
 .col-left {
-    margin: 0 15% 0 15%;
+    margin: 0 15%;
+}
+.col-right {
+    justify-content: center;
+    align-items: center;
+    right: 0;
+    left: 50;
 }
 
-.home-content span {
+/*.home-content span {
     color: var(--second-theme-color);
 }
 .home-content h1 {
@@ -103,20 +110,25 @@ section {
 .home-content p {
     font-weight: 400;
     max-width: 600px;
+}*/
+.purple-text {
+    color: var(--second-theme-color);
 }
 
-.profile-img {
+/*.profile-img {
     border-radius: 50%;
-}
+}*/
 .profile-img img {
-    position: relative;
+    /*position: relative;*/
     top: 3rem;
-    width: 60%;
+    width: 50%;
+    height: auto;
     border-radius: 50%;
     border: 2px solid var(--second-theme-color);
     box-shadow: 0 0 25px var(--second-theme-color);
     cursor: pointer;
     transition: 0.4s ease-in-out;
+    margin: 10% 20% 5% 25%;
 }
 .profile-img img:hover {
     box-shadow: 0 0 25px var(--second-theme-color),
@@ -158,7 +170,7 @@ section {
     font-weight: 500;
     border: 2px solid transparent;
 }
-.btn:hover, .btn-nav:hover {
+.btn:hover {
     background: transparent;
     box-shadow: 0 0 10px var(--second-theme-color);
     border: 2px solid var(--second-theme-color);
@@ -166,58 +178,3 @@ section {
     transform: scale(1)translateY(3px);
 }
 
-.text-animation {
-    font-size: 25px;
-    font-weight: 600;
-    min-width: 280px;
-}
-.text-animation span {
-    position: relative;
-}
-.text-animation span::before {
-    content: "Software Engineering Student";
-    color: var(--second-theme-color);
-    animation: words 20s infinite;
-}
-.text-animation span::after {
-    content: "";
-    background-color: var(--second-bg-color);
-    position: absolute;
-    width: calc(100% + 8px);
-    height: 100%;
-    border-left: 3px solid var(--second-bg-color);
-    right: -8px;
-    animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
-}
-/*
-@keyframes cursor {
-    to {
-        border-left: 2.5px solid var(--second-theme-color);
-    }
-}
-@keyframes words {
-    0%, 20% {
-        content: "Software Engineering Student";
-    }
-    21%, 40% {
-        content: "Front-End Developer";
-    }
-    41%, 60% {
-        content: "Web Designer";
-    }
-    61%, 80% {
-        content: "Programmer";
-    }
-    81%, 100% {
-        content: "Full-Stack Developer";
-    }
-}
-@keyframes typing {
-    10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95% {
-        width: 0;
-    }
-    5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85% {
-        width: calc(100% + 8px);
-    }
-}
-*/
