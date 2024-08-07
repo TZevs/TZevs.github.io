@@ -77,15 +77,13 @@ header span {
     display: none;
 }
 
-section {
-    min-height: 100vh;
-}
 .home-grid {
     display: grid;
-    padding: 8rem 0;
+    padding: 6rem 0 0 0;
     grid-template-columns: repeat(2, 50%);
     align-items: center;
     justify-content: center;
+    min-height: 100vh;
 }
 .home-grid-col {
     justify-content: center;
@@ -101,25 +99,11 @@ section {
     left: 50;
 }
 
-/*.home-content span {
-    color: var(--second-theme-color);
-}
-.home-content h1 {
-    font-size: 3rem;
-}
-.home-content p {
-    font-weight: 400;
-    max-width: 600px;
-}*/
 .purple-text {
     color: var(--second-theme-color);
 }
 
-/*.profile-img {
-    border-radius: 50%;
-}*/
 .profile-img img {
-    /*position: relative;*/
     top: 3rem;
     width: 50%;
     height: auto;
@@ -143,7 +127,7 @@ section {
     width: 2.75rem;
     height: 2.75rem;
     background: transparent;
-    border: p1x solid var(--second-theme-color);
+    border: 1px solid var(--second-theme-color);
     border-radius: 50%;
     color: var(--second-theme-color);
     font-size: 1.5rem;
@@ -178,3 +162,34 @@ section {
     transform: scale(1)translateY(3px);
 }
 
+section:not(.home-grid) {
+    margin: 50px;
+}
+section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 20%);
+    justify-content: center;
+    gap: 20px;
+    border: 3px solid var(--first-theme-color);
+    margin: 0 30px 20px 0;
+    padding: 25px 10px;
+    border-radius: 20px;
+    box-shadow: 0 0 7px var(--first-theme-color);
+}
+.grid-boxes {
+    text-align: center;
+}
+.grid-boxes i {
+    font-size: 50px;
+}
+
+footer {
+    width: 100%;
+    bottom: 0;
+    padding: 2rem 2rem 2rem 5rem;
+    background-color: rgba(0, 0, 0, 0.3);
+}

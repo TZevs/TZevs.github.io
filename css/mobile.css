@@ -1,3 +1,7 @@
+.navbar {
+    display: none;
+}
+
 .home-grid {
     grid-template-columns: repeat(1, 100%);
     padding: 6rem 0;
@@ -9,7 +13,6 @@
     order: -1;
 }
 
-
-.navbar {
-    display: none;
+.skills-grid {
+    grid-template-columns: repeat(2, 30%);
 }
