@@ -1,5 +1,22 @@
+#menu-icon {
+    display: block;
+}
 .navbar {
-    display: none;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    width: 100%;
+    padding: 10px;
+    top: 0;
+    left: 0;
+    transform: translateY(-100%); 
+    transition: transform 0.3s ease-in-out;  
+    z-index: 1000; 
+}
+.showNavbar {
+    transform: translateY(6rem); 
 }
 
 .home-grid {
