@@ -79,6 +79,17 @@ header span {
 
 section {
     min-height: 100vh;
+    margin: auto;
+}
+section:not(.home-grid) {
+    max-width: 80%;
+    padding: 40vh 0;
+} 
+
+@media only screen and (min-width: 2000px) {
+    .home-grid {
+        max-width: 70%;
+    }
 }
 
 .home-grid {
@@ -105,6 +116,10 @@ section {
 
 .purple-text {
     color: var(--second-theme-color);
+}
+.black-text {
+    color: var(--bg-color);
+    font-weight: 600;
 }
 
 .profile-img img {
@@ -166,28 +181,29 @@ section {
     transform: scale(1)translateY(3px);
 }
 
-section:not(.home-grid) {
-    margin: 50px;
-}
 section h2 {
     text-align: center;
     margin-bottom: 20px;
 }
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(4, 20%);
+    grid-template-columns: repeat(5, 1fr);
     justify-content: center;
     grid-column-gap: 40px;
     grid-row-gap: 20px;
     border: 3px solid var(--second-theme-color);
     margin-bottom: 20px;
-    padding: 25px 10px;
+    padding: 20px 20px;
     border-radius: 20px;
     box-shadow: 0 0 7px var(--second-theme-color);
     width: 100%;
 }
 .grid-boxes {
     text-align: center;
+    background-color: var(--second-theme-color);
+    border-radius: 5px;
+    padding: 10px 0;
+    box-shadow: 0 0 7px var(--second-theme-color);
 }
 .grid-boxes i {
     font-size: 50px;
@@ -199,16 +215,16 @@ section h2 {
 .timeline-item {
     background-color: var(--second-theme-color);
     margin-bottom: 20px;
-    width: 50%;
+    width: 60%;
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0 0 7px var(--second-theme-color);
 }
 .timeline-item:nth-child(even) {
-    margin-left: 50%;
+    margin-left: 40%;
 }
 .timeline-item:nth-child(odd) {
-    margin-right: 50%;
+    margin-right: 40%;
 }
 
 /* Contact Section */
@@ -237,6 +253,7 @@ section h2 {
     width: 100%;
     max-width: 500px;
     box-sizing: border-box;
+    box-shadow: 0 0 3px var(--second-theme-color);
 }
 .message-input {
     height: 200px;
@@ -246,6 +263,21 @@ section h2 {
     width: 100%;
     display: flex;
     justify-content: center;
+}
+
+/* Project Section */
+.project-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    grid-gap: 20px;
+}
+.project-card {
+    background-color: var(--third-theme-color);
+    border-radius: 5px;
+    box-shadow: 0 0 7px var(--third-theme-color);
+    padding: 10px;
+    text-align: center;
 }
 
 /* Footer */
