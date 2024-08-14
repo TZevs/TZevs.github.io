@@ -226,6 +226,9 @@ section h2 {
 .timeline-item:nth-child(odd) {
     margin-right: 40%;
 }
+.timeline-content ul {
+    padding-left: 40px;
+}
 
 /* Contact Section */
 .contact-section form {
