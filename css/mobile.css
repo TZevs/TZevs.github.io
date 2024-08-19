@@ -25,12 +25,12 @@ section {
 }
 
 /* Home Section */
-.home-grid {
+.home-grid-col {
     grid-template-columns: repeat(1, 100%);
-    padding: 6rem 0;
 }
 .col-left {
     order: 2;
+    text-align: center;
 }
 .col-right {
     order: -1;
@@ -38,7 +38,7 @@ section {
 
 /* Skills Section */
 .skills-grid {
-    grid-template-columns: repeat(2, 43%);
+    grid-template-columns: repeat(2, 50%);
     grid-column-gap: 25px;
 }
 

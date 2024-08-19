@@ -78,12 +78,13 @@ header span {
 }
 
 section {
-    min-height: 100vh;
-    margin: auto;
+    /* min-height: 100vh; */
+    /* margin: auto; */
 }
 section:not(.home-grid) {
     max-width: 80%;
-    padding: 40vh 0;
+    padding: 20vh 0 40vh 0;
+    margin: auto;
 } 
 
 @media only screen and (min-width: 2000px) {
@@ -93,24 +94,27 @@ section:not(.home-grid) {
 }
 
 .home-grid {
-    display: grid;
+    /* display: grid;
     padding: 6rem 0 0 0;
-    grid-template-columns: repeat(2, 50%);
-    align-items: center;
-    justify-content: center;
-    /* min-height: 100vh; */
+    grid-template-columns: repeat(2, 50%); */
+    /* align-items: center;
+    justify-content: center; */
+    min-height: 100vh;
 }
 .home-grid-col {
+    display: grid;
+    padding: 7rem 0 0 0;
+    grid-template-columns: repeat(2, 45%); /* This centered the col content, made it smaller than 50% */
     justify-content: center;
-    align-items: center;
+    align-items: center; 
 }
-.col-left {
-    margin: 0 15%;
-}
+/* .col-left {
+    justify-content: center;
+} */
 .col-right {
     justify-content: center;
     align-items: center;
-    right: 0;
+    /* right: 0; */
     /* left: 50; */
 }
 
@@ -124,7 +128,7 @@ section:not(.home-grid) {
 
 .profile-img img {
     top: 3rem;
-    width: 50%;
+    width: 60%;
     height: auto;
     border-radius: 50%;
     border: 3px solid var(--second-theme-color);
@@ -249,12 +253,11 @@ section h2 {
     background-color: var(--third-theme-color);
     border-radius: 5px;
     box-shadow: 0 0 7px var(--third-theme-color);
-    padding: 20px 10px;
+    padding: 20px;
     text-align: center;
 }
 .project-img {
-    width: 300px;
-    height: 125px;
+    width: 100%;
     border-radius: 5px;
     border: 2px solid var(--bg-color);
     box-shadow: 0 0 7px var(--bg-color);
@@ -291,14 +294,30 @@ main {
     padding: 20px;
     border: 5px solid var(--third-theme-color);
     box-shadow: 0 0 10px var(--third-theme-color);
-    border-radius: 5px;
+    border-radius: 20px;
     margin-top: 20px;
+    column-gap: 20px;
+}
+.project-imgs-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .project-desc {
     text-align: left;
 }
+.project-details {
+    background-color: var(--third-theme-color);
+    box-shadow: 0 0 7px var(--third-theme-color);
+    padding: 5px;
+    border-radius: 10px;
+    margin-top: 5px;
+    font-size: small;
+}
 .project-imgs-slide img {
-    max-width: 500px;
+    max-width: 90%;
+    margin: 0 3px;
+    border-radius: 7px;
 }
 
 /* Footer */
