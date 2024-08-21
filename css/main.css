@@ -155,7 +155,7 @@ section:not(.home-grid) {
     color: var(--second-theme-color);
     font-size: 1.5rem;
     box-shadow: 0 0 5px var(--second-theme-color);
-    margin: 1rem 1.25rem 1rem 0;
+    margin: 1rem 2rem 1rem 0;
     transition: 0.3s ease-in-out;
 }
 .social-icons a:hover {
@@ -176,6 +176,7 @@ section:not(.home-grid) {
     letter-spacing: 0.1rem;
     font-weight: 500;
     border: 2px solid transparent;
+    margin-right: 15px;
 }
 .btn:hover {
     background: transparent;
@@ -184,6 +185,7 @@ section:not(.home-grid) {
     color: var(--second-theme-color);
     transform: scale(1)translateY(3px);
 }
+
 
 section h2 {
     text-align: center;
@@ -251,10 +253,14 @@ section h2 {
 }
 .project-card {
     background-color: var(--third-theme-color);
+    color: var(--text-color);
     border-radius: 5px;
     box-shadow: 0 0 7px var(--third-theme-color);
     padding: 20px;
     text-align: center;
+}
+.project-card:hover {
+
 }
 .project-img {
     width: 100%;
@@ -294,36 +300,42 @@ main {
     padding: 20px;
     border: 5px solid var(--third-theme-color);
     box-shadow: 0 0 10px var(--third-theme-color);
+    background-color: var(--third-theme-color);
     border-radius: 20px;
     margin-top: 20px;
     column-gap: 20px;
 }
-.project-imgs-slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.project-desc {
-    text-align: left;
-}
+
 .project-details {
-    background-color: var(--third-theme-color);
-    box-shadow: 0 0 7px var(--third-theme-color);
+    background-color: var(--second-bg-color);
     padding: 5px;
     border-radius: 10px;
     margin-top: 5px;
     font-size: small;
+    text-align: left;
 }
-.project-imgs-slide img {
-    max-width: 90%;
-    margin: 0 3px;
-    border-radius: 7px;
+/* Image Slider */
+.slider-container {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    position: relative;
+    margin: auto;
+    max-width: 100%;
 }
+.slidesImg {
+    width: 90%;
+    vertical-align: middle;
+    border-radius: 5px;
+    box-shadow: 0 0 10px var(--bg-color);
+}
+
 
 /* Footer */
 footer {
     width: 100%;
     bottom: 0;
-    padding: 2rem 2rem 2rem 5rem;
+    padding: 2rem 5rem;
     background-color: rgba(0, 0, 0, 0.3);
+    text-align: center;
 }
