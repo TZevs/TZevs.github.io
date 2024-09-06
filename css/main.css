@@ -15,7 +15,7 @@
     --second-bg-color: #1b1b1b;
     --third-bg-color: #181818;
     --text-color: #fff;
-    --first-theme-color: #00acdc;
+    --first-theme-color: #2D8DDC;
     --second-theme-color: #9d60ff;
     --third-theme-color: #DC3100;
 }
@@ -198,7 +198,7 @@ section h2 {
     margin: auto;
     padding: 20px 20px;
     border-radius: 20px;
-    box-shadow: 0 0 7px var(--second-theme-color);
+    /* box-shadow: 0 0 7px var(--second-theme-color); */
     width: 80%;
 }
 .grid-boxes {
@@ -206,7 +206,7 @@ section h2 {
     background-color: var(--second-theme-color);
     border-radius: 5px;
     padding: 10px 0;
-    box-shadow: 0 0 7px var(--second-theme-color);
+    /* box-shadow: 0 0 7px var(--second-theme-color); */
 }
 .grid-boxes i {
     font-size: 50px;
@@ -228,7 +228,7 @@ section h2 {
     margin-bottom: 30px;
     padding: 10px;
     border-radius: 10px;
-    box-shadow: 0 0 7px var(--second-theme-color);
+    /* box-shadow: 0 0 7px var(--second-theme-color); */
 }
 .content-list {
     margin-left: 40px;
@@ -247,18 +247,18 @@ section h2 {
     margin: auto;
 }
 .project-card {
-    background-color: var(--third-theme-color);
-    color: var(--text-color);
+    background-color: var(--first-theme-color);
+    color: var(--bg-color);
     border-radius: 5px;
-    box-shadow: 0 0 7px var(--third-theme-color);
+    /* box-shadow: 0 0 7px var(--first-theme-color); */
     padding: 20px;
     text-align: center;
 }
 .project-img {
     width: 100%;
     border-radius: 5px;
-    border: 2px solid var(--bg-color);
-    box-shadow: 0 0 7px var(--bg-color);
+    border: 1px solid var(--bg-color); 
+    box-shadow: 0 0 5px var(--bg-color);  
 }
 
 /* Contact Section */
@@ -286,7 +286,7 @@ section h2 {
 
 /* Projects Page */
 main {
-    margin: 150px auto;
+    margin: 150px auto 50px auto;
     max-width: 80%;
     text-align: center;
 }
@@ -294,10 +294,10 @@ main {
     display: grid;
     grid-template-columns: repeat(2, 50%);
     padding: 20px;
-    border: 5px solid var(--third-theme-color);
-    box-shadow: 0 0 10px var(--third-theme-color);
-    background-color: var(--third-theme-color);
-    border-radius: 20px;
+    /* border: 5px solid var(--third-theme-color);
+    box-shadow: 0 0 10px var(--third-theme-color); */
+    background-color: var(--first-theme-color);
+    border-radius: 10px;
     column-gap: 20px;
     margin: 40px 0;
 }
@@ -326,9 +326,9 @@ main {
     width: 90%;
     vertical-align: middle;
     border-radius: 5px;
-    box-shadow: 0 0 10px var(--bg-color);
+    border: 1px solid var(--bg-color); 
+    box-shadow: 0 0 5px var(--bg-color); 
 }
-
 
 /* Footer */
 footer {
@@ -337,4 +337,7 @@ footer {
     padding: 2rem 5rem;
     background-color: rgba(0, 0, 0, 0.3);
     text-align: center;
+}
+footer a {
+    color: var(--text-color);
 }
