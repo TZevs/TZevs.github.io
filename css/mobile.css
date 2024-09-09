@@ -22,7 +22,6 @@
 
 /* Home Section */
 .home-grid-col {
-    padding-top: 70px;
     grid-template-columns: repeat(1, 100%);
 }
 .col-left {
@@ -72,19 +71,9 @@
 }
 
 /* Projects Page */
-.project-grid {
-    grid-template-columns: repeat(1, 100%);
-    justify-content: center;
-    gap: 20px;
-}
-.project-imgs-slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.project-imgs-slide img {
-    max-width: 90%;
-    margin: 0 7px;
+.project-container {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 20px;
 }
 
 /* Footer */
