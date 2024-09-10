@@ -1,48 +1,41 @@
 /* Navigation */
 #menu-icon {
-    display: block;
-}
-.navbar {
     position: fixed;
+    display: block;
+    border-radius: 50px;
+    padding: 5px 75px;
+    background-color: rgba(27, 27, 27, 0.9);
+}
+nav {
+    width: 55%;
     display: flex;
     flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(10px);
-    width: 100%;
-    padding: 10px;
+    align-items: center;
     top: 0;
-    left: 0;
     transform: translateY(-100%); 
     transition: transform 0.3s ease-in-out;  
     z-index: 1000; 
+    border-radius: 10px;
+}
+nav a {
+    width: 90%;
+    border: 3px solid var(--second-theme-color);
+    background-color: rgba(27, 27, 27, 0.8);
+    text-align: center;
+    margin: 5px;
+    padding: 10px;
 }
 .showNavbar {
-    transform: translateY(6rem); 
+    transform: translateY(4.5rem); 
 }
 
 /* Home Section */
-.home-grid-col {
-    grid-template-columns: repeat(1, 100%);
+.home-grid-cols {
+    flex-direction: column-reverse;
 }
-.col-left {
-    order: 2;
+.col-left, .col-right {
+    max-width: 100%;
     text-align: center;
-    padding: 0;
-}
-.col-left p {
-    padding: 0 20px;
-}
-.social-icons a {
-    margin: 20px 10px;
-}
-.btn-group a {
-    margin: 0 10px;
-}
-.col-right {
-    order: -1;
-}
-.profile-img img {
-    margin: 10% 20%;
 }
 
 /* Skills Section */
@@ -71,6 +64,9 @@
 }
 
 /* Projects Page */
+main {
+    margin-top: 50px;
+}
 .project-container {
     grid-template-columns: repeat(1, 1fr);
     row-gap: 20px;
