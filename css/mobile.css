@@ -43,6 +43,14 @@ nav a {
 .col-left h1 {
     font-size: 2rem;
 }
+.col-left h2 {
+    margin-bottom: 10px;
+}
+.social-links {
+    width: 90%;
+    margin: auto;
+    padding-bottom: 10px;
+}
 
 /* Skills Section */
 .skills-grid {

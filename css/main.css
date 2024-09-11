@@ -25,8 +25,9 @@ body {
     color: var(--text-color);
 }
 a { color: var(--text-color); }
+span { color: var(--second-theme-color); }
 
-/* Header / NavBar */
+/* Header and NavBar */
 header {
     width: 100%;
     display: flex;
@@ -117,7 +118,7 @@ section:not(.home-section) {
                 0 0 100px var(--second-theme-color);
 }
 .col-left {
-    flex: 1; /* Makes both divs the same size */
+    flex: 1; 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -130,29 +131,28 @@ section:not(.home-section) {
 /* Links */
 .social-links {
     display: flex;
+    width: 60%;
+    justify-content: space-around;
+    margin: 10px 0;
+    padding: 10px 0; 
+    border-top: 5px dashed var(--second-theme-color);
 }
 .social-links a {
-    border: 1px solid var(--second-theme-color);
-    border-radius: 50%;
+    border: 3px solid var(--second-theme-color);
     color: var(--second-theme-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 30px;
     transition: 0.3s ease-in-out;
 }
 .social-links a:hover {
     color: var(--text-color);
     background-color: var(--second-theme-color);
 }
-.btn {
-    display: inline-block;
-    padding: 0.5rem 1.5rem;
-    background-color: var(--second-theme-color);
-    border-radius: 20px;
-    border: 2px solid var(--second-theme-color);
-    color: var(--text-color);
-    transition: 0.3s ease-in-out;
-}
-.btn:hover {
-    background: transparent;
-    color: var(--second-theme-color);
+.social-links i {
+    font-size: 2rem;
 }
 
 /* Skills Section */
