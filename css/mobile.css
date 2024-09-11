@@ -34,33 +34,28 @@ nav a {
     flex-direction: column-reverse;
 }
 .col-left, .col-right {
-    max-width: 100%;
+    width: 100%;
     text-align: center;
+}
+.col-left {
+    padding: 20px;
+}
+.col-left h1 {
+    font-size: 2rem;
 }
 
 /* Skills Section */
 .skills-grid {
-    grid-template-columns: repeat(2, 50%);
-    grid-column-gap: 20px;
+    grid-gap: 10px;
+}
+.grid-boxes {
+    width: 160px;
+    height: 160px;
 }
 
 /* Education Section */
-
-/* Project Section */
-.project-cards {
-    grid-template-columns: repeat(1, 1fr);
-}
-
-/* Contact Section */
-.contact-grid {
-    grid-template-columns: repeat(1, 80%);
-}
-.contact-grid a {
-    grid-column: span 1;
-}
-.contact-grid a:last-child {
-    grid-column: span 1;
-    text-align: left;
+.education-item, .project-card, .contact-grid a {
+    width: 100%;
 }
 
 /* Projects Page */
