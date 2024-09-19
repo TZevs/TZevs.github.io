@@ -30,5 +30,4 @@ document.addEventListener("click", function(ev) {
     }
 })
 
-// Project Image Slider
-let slideIndex = [1, 1];
+// Projects Page
