@@ -70,7 +70,8 @@ nav a:hover {
 /* All Sections */
 section:not(.home-section) {
     /* width: 100%;    */
-    margin: 50px 0; 
+    margin: 50px 50px; 
+    padding: 75px 0;
     display: flex;
     align-items: center;
     justify-content: center; 
@@ -172,7 +173,7 @@ section:not(.home-section) {
     border-radius: 5px;
     padding: 10px;
 }
-.grid-boxes:nth-child(3n), .education-item:nth-child(even) {
+.grid-boxes:nth-child(3n), .education-item:nth-child(even), .project-card:nth-child(even) {
     background-color: var(--third-bg-color);
     border: 3px solid var(--second-theme-color);
     color: var(--second-theme-color);
@@ -237,7 +238,7 @@ section:not(.home-section) {
     background-color: var(--third-bg-color);
     border-radius: 5px;
     border: 2px solid var(--second-theme-color);
-    width: 40%;
+    width: 30%;
     text-align: center;
 }
 
