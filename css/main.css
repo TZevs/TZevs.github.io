@@ -156,6 +156,11 @@ section:not(.home-section) {
     font-size: 2rem;
 }
 
+/* About Section */
+.about-summary {
+    width: 80%;
+}
+
 /* Skills Section */
 .skills-grid {
     flex-wrap: wrap;

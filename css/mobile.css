@@ -29,6 +29,11 @@ nav a {
     transform: translateY(4.5rem); 
 }
 
+/* Sections */
+section:not(.home-section) {
+    margin: 50px 20px;
+}
+
 /* Home Section */
 .home-grid-cols {
     flex-direction: column-reverse;
@@ -52,18 +57,29 @@ nav a {
     padding-bottom: 10px;
 }
 
+/* About Section */
+.about-summary {
+    width: 100%;
+}
+
 /* Skills Section */
 .skills-grid {
     grid-gap: 10px;
 }
 .grid-boxes {
-    width: 160px;
-    height: 160px;
+    width: 140px;
+    height: 140px;
+}
+.grid-boxes h3 {
+    display: none;
 }
 
 /* Education Section */
 .education-item, .project-card, .contact-grid a {
     width: 100%;
+}
+.education-item {
+    padding: 25px;
 }
 
 /* Projects Page */
