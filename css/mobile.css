@@ -83,13 +83,7 @@ section:not(.home-section) {
 }
 
 /* Projects Page */
-main {
-    margin-top: 50px;
-}
-.project-container {
-    grid-template-columns: repeat(1, 1fr);
-    row-gap: 20px;
-}
+
 
 /* Footer */
 footer {
