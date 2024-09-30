@@ -30,7 +30,7 @@ nav a {
 }
 
 /* Sections */
-section:not(.home-section) {
+section:not(.home-section), .project-container {
     margin: 50px 20px;
 }
 
