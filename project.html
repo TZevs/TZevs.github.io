@@ -24,34 +24,97 @@
     </header>
 
     <main class="project-container">
-        <div class="project-content">
+        <div class="project-content" id="pp-college">
             <div class="project-header">
                 <h2>College Website</h2>
                 <h3>Status: Updating</h3>
             </div>
-            <p><b>Project Type:</b> Website</p>
-            <p><b>Description:</b> </p>
+            <div class="project-desc">
+                <h4>Description:</h4>
+                <p>
+                    I was given, for an individual project, a client brief to create a website for ‘Cantor College’. 
+                    The project focuses on frontend development but does have a db connection to store the course information. 
+                    Even though I only require the db connection for 2 of the pages all the pages are php files this is becuase of my use of <b>include</b> for my header and footer.
+                    <br><br>
+                    Due to this being an individual project with a focus on frontend the planning process was not as important as it would be in other projects and consisted of low fidelity wireframes for both desktop and mobile. 
+                    Toward the end of the project I used Lighthouse, a chrome tool, to audit each page I improved my website using the results of these audites.
+                    At the end of the project each page had 100 for accessbility and 85-90+ for the others. 
+                    <br><br>
+                    I have developed my skills quite a lot since the start of this project and know that I can make a number of improvements to this website, so I am creating a new branch in GitHub to do just that. 
+                    For maintenance I audited the website pages again which resulted in lower scores than before so I will also spend some time bringing these numbers up.
+                </p>
+                <br><p><b>Languages:</b> HTML, CSS, JS, PHP, SQL</p>
+                <p><b>Software Used:</b> XAMPP, PhpMyAdmin, GitHub, Font Awesome</p>
+                <p><b><i>Improvements in progress. <a href="https://github.com/TZevs/CollegeWebsiteProject" target="_blank" class="underline">GitHub Repository Link.</a></i></b></p>
+                <div class="project-imgs">
+
+                </div>
+            </div>
         </div>
-        <div class="project-content">
+        <div class="project-content" id="pp-cta">
             <div class="project-header">
-                <h2>Currency Transfer App</h2>
+                <h2>Currency Transfer Application</h2>
                 <h3>Status: Complete</h3>
+            </div>
+            <div class="project-desc">
+                <h4>Description:</h4>
+                <p>
+                    This Currency Transfer Application (CTA) allows customers to store, exchange, and transfer money in different currencies. 
+                    An API is connected to provide automatic exchange rate updates to the 161 major currencies used in 200 countries. 
+                    There is also a db connection, hosted on a local server by xampp to store user information. 
+                    <br><br> 
+                    New customers create accounts at the register page they then can login to open up a ‘wallet’ page with an empty main (GBP) ‘wallet’. 
+                    On this page the user creates and or removes ‘wallets’ of different currencies, once created the customer can start exchanging their money. 
+                    The account page will allow for the update / change of personal details.
+                    <br><br>
+                    Customer’s can transfer money between their currency ‘wallets’ and can send funds to a friend's account if they enter the correct details into the relevant fields. 
+                    Before transferring funds the customer will need to exchange the money, this is for the verification of the transaction; checks if there are sufficient funds, and if the user wants to increase or decrease the amount. 
+                </p>
+                <br><p><b>Languages:</b> HTML, CSS, JS, PHP, SQL</p>
+                <p><b>Software Used:</b> XAMPP, SQLite, PhpMyAdmin, GitHub, Boostrap, Font Awesome, an API</p>
+                <p><b><i><a href="https://github.com/TZevs/CTAcode" target="_blank" class="underline">GitHub Repository Link.</a></i></b></p>
+                <div class="project-imgs">
+
+                </div>
+            </div>
+        </div>
+        <div class="project-content" id="pp-eer">
+            <div class="project-header">
+                <h2>EER Calculator App</h2>
+                <h3>Status: Complete</h3>
+            </div>
+            <div class="project-desc">
+                <h4>Description:</h4>
+                <p>
+                    A web-based applicaion of an Energy Effciency Rating (EER) calculator, myself and 4 others worked together with a client for this project. 
+                    We ensured all interactions with the db was secure to protect both the user's personal details and the dependability of the application, the db stores user information, buildings, saved buildings, and residential buildings.
+                    <br><br>
+                    User accounts are of 2 types; tenants and landlords. The landlords can add buildings, enter data into the calculator, remove their buildings, update calculations, search and view other buildings. 
+                    A tenant account can only view the buildings and their ratings as well as save them to the dashboard. 
+                    On the account page a user's details can be updated. 
+                    <br><br>
+                    The browse page has a search bar and filter fields, a tagged map, and a list of the buildings with their name, address, and rating. 
+                    The user can search for a building name, an address, or building type. For the filter all buildings with the selected rating/s will be listed underneath the map. 
+                    The results of any search or filter will be displayed on the map with a tag of the corresponding rating colour. 
+                    <br><br>
+                    My team and I managed to meet the client's requirments within the set time frame, before we began action plans, roles, and responsibilities were written down to improve our collaboration. 
+                    For maintenance the admin will review building information to ensure it is valid before making it visible to other users.   
+                    In the future the client would like to add features if ideas for them come up like giving the user a way to compare building's. 
+                    Our university lecturer acted as a client and we treated them as such.
+                </p>
+                <br><p><b>Languages:</b> HTML, CSS, JS, TS, PHP, SQL</p>
+                <p><b>Software Used:</b> XAMPP, SQLite, PhpMyAdmin, GitHub, JSON</p>
+                <p><b><i><a href="https://github.com/TZevs/eercalculator" target="_blank" class="underline">GitHub Repository Link.</a></i></b></p>
+            </div>
+        </div>
+        <!-- <div class="project-content">
+            <div class="project-header">
+                <h2>Inventory Management System</h2>
+                <h3>Status: In Progress</h3>
             </div>
             <p><b>Project Type:</b> Web-Based Application</p>
             <p><b>Description:</b> </p>
-        </div>
-        <div class="project-content">
-            <h2>EER Calculator App</h2>
-            <h3>Status: Complete</h3>
-            <p><b>Project Type:</b> Web-Based Application</p>
-            <p><b>Description:</b> </p>
-        </div>
-        <div class="project-content">
-            <h2>Inventory Management System</h2>
-            <h3>Status: In Progress</h3>
-            <p><b>Project Type:</b> Web-Based Application</p>
-            <p><b>Description:</b> </p>
-        </div>
+        </div> -->
     </main>
 
     <footer>
