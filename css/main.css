@@ -214,7 +214,6 @@ section:not(.home-section) {
     padding: 20px;
     grid-gap: 20px;
     display: flex;
-    /* justify-content: center; */
 }
 .project-card {
     background-color: var(--second-theme-color);
