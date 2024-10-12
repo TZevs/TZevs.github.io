@@ -280,3 +280,14 @@ footer {
     flex-direction: row;
     justify-content: space-between;
 }
+.project-imgs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.project-img {
+    width: 40%;
+    height: auto;
+    margin: 10px;
+}
