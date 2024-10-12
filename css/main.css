@@ -26,7 +26,6 @@ body {
 }
 a { color: inherit; }
 .purple-txt { color: var(--second-theme-color); } 
-.underline { text-decoration: underline; }
 
 /* Header and NavBar */
 header {
@@ -69,7 +68,6 @@ nav a:hover {
 
 /* All Sections */
 section:not(.home-section) {
-    /* width: 100%;    */
     margin: 50px 50px; 
     padding: 75px 0;
     display: flex;
@@ -197,8 +195,8 @@ section:not(.home-section) {
     padding: 20px;
 }
 .education-item {
-    width: 40%;
-    height: 400px;
+    width: 60%;
+    min-height: 400px;
     padding: 40px;
     background-color: var(--second-theme-color);
     display: flex;
