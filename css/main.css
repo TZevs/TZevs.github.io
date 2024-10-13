@@ -287,7 +287,11 @@ footer {
     justify-content: center;
 }
 .project-img {
-    width: 40%;
-    height: auto;
+    min-width: 30%;
+    width: 45%;
+    margin: 10px;
+}
+.project-img-mob {
+    width: 20%;
     margin: 10px;
 }

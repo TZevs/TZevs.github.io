@@ -84,6 +84,12 @@ section:not(.home-section), .project-container {
 .project-header {
     flex-direction: column;
 }
+.project-img {
+    width: 100%;
+}
+.project-img-mob {
+    display: none;
+}
 
 /* Footer */
 footer {
