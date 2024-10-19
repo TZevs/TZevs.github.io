@@ -178,6 +178,9 @@ section:not(.home-section) {
     border-radius: 5px;
     padding: 10px;
 }
+.grid-boxes p {
+    font-weight: bold;
+}
 .grid-boxes:nth-child(3n), .education-item:nth-child(even), .project-card:nth-child(even), .project-content:nth-child(even) {
     background-color: var(--third-bg-color);
     border: 3px solid var(--second-theme-color);

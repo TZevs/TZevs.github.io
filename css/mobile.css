@@ -71,6 +71,9 @@ section:not(.home-section), .project-container {
     width: 140px;
     height: 140px;
 }
+.grid-boxes p {
+    font-weight: normal;
+}
 
 /* Education Section */
 .education-item, .project-card, .contact-grid a {
